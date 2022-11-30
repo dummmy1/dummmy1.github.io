@@ -8,11 +8,18 @@
       name="keywords"
       content="dummy, dummmy1, github, project, dummypage, dummypenta"
     />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="pragma" content="no-cache" />
     <title>Dummmy1</title>
 
     <style>
+      .clickText {
+        color: #b4b4b4;
+      }
       .clickButton {
         background-color: bisque;
+        color: #565656;
       }
       .content {
         max-width: 1200px;
@@ -54,6 +61,7 @@
       <h1 class="github">
         Draven penta below hehe (with vattu in the background)
       </h1>
+
       <script>
         var clicks = 0;
 
@@ -62,10 +70,11 @@
           document.getElementById("clicks").innerHTML = clicks;
         }
       </script>
+
       <button class="clickButton" type="button" onClick="onClick()">
         Click me
       </button>
-      <p>Clicks: <a id="clicks">0</a></p>
+      <p class="clickText">Clicks: <a id="clicks">0</a></p>
 
       <video
         src="videos/crusty ahh penta.mp4"
